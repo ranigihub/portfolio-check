@@ -1,0 +1,113 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    height: auto;
+}
+
+ul li:hover{
+    border-bottom: 2px solid #4ceb95;
+    
+}
+.main{
+background-image: url(./images/Portfolio\ Kavita.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: auto;
+padding-bottom: 10rem;
+}
+.about .container{
+    height: auto;
+    background: rgba(0, 0, 0, 0.9);
+    padding-bottom: 3rem;
+}
+.flot{
+    float: right;
+}
+.about h2::after{
+
+   content: '';
+   width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 4px 10px;
+}
+.line{
+    border: 1px solid #4ceb95;
+    width: 50px;
+}
+/* .text{
+    background-color:rgba(255, 255, 255, 0.08);
+    padding: 20px 25px;
+    
+} */
+.icon{
+    display: flex;
+}
+.btn{
+ width: 200px;
+ height: 50px;
+ background: #4ceb95;
+ border: 0;
+ outline: none;
+ border-radius: 7px;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+.hoverimg i{
+    display: none;
+    transition: all ease-in-out 0.5s;
+}
+.hoverimg .col-lg-4:hover{ 
+    transition: all 0.8s;
+    filter: opacity(0.5);
+    transition: all ease-in-out 0.5s;
+}
+.hoverimg .col-lg-4:hover i{
+    display: block;
+    color: #4ceb95;
+    transition: all ease-in-out 0.5s;
+}
+.main{
+    transform: translate(x);
+}
+
+/* CSS for Animation */
+/* fade */
+.transition-fade{
+    opacity: 1;
+    transition: 800ms;
+    transform: translateX(0);
+    transform-origin: left;
+}
+html.is-animating .transition-fade{
+    opacity: 1;
+    transform: translateX(100%);
+}
+html.is-leaving .transition-fade{
+    opacity: 0;
+}
+/* swipe */
+.transition-swipe{
+    opacity: 1;
+    transition: 800ms;
+    transform: translateY(0);
+    transform-origin: right;
+}
+html.is-animating .transition-swipe{    
+    transform: translateY(100%);
+}
+html.is-leaving .transition-swipe{
+    opacity: 0;
+}
+/* CSS for Animation End */
